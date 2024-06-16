@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding:0px;
+    }
+:root{
+    background-color: rgba(153, 173, 185, 0.767);
+    padding: 0px;
+    margin: 0%;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+#workspace{
+    flex: 1;
+}
+.svg-header{
+    width: 2rem ;
+    height: auto;  
+}
+#main{
+    display: flex;
+    width: 100%;
+
+}
+#my_projects{
+    display: grid;
+    width: 70%;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 200px;
+    padding-left: 20px;
+}
+#main>div{
+    margin: 1%;
+}
+.svg{
+    width: 1.1rem;
+    margin-left: 3px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(4429%) hue-rotate(221deg) brightness(90%) contrast(97%);
+}
+
+
+#sidebar{
+    display:grid;
+    width: 20%;
+    background-color: #ede76fc6;
+    border-radius: 20px;
+
+}
+#sidebar>div{
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+#announcement{    
+    display: grid;
+    background-color: aliceblue;
+    margin: 3%;
+}
+#announcement>legend{
+    justify-self: center;
+    align-self: center;
+    font-size: larger;
+    border-bottom: solid 2px rgb(113, 179, 236);
+
+}
+#announcement>div{
+    padding: 10px;
+    background-color: rgba(113, 179, 236, 0.234);
+    border-bottom: solid 2px rgb(113, 179, 236);
+}
+
+
+#trending{    
+    display: grid;
+    background-color: aliceblue;
+    margin: 3%;
+}
+#trending>legend{
+    justify-self: center;
+    align-self: center;
+    font-size: larger;
+    border-bottom: solid 2px rgb(113, 179, 236);
+
+}
+#trending>div{
+    padding: 10px;
+    background-color: rgba(113, 179, 236, 0.234);
+    border-bottom: solid 2px rgb(113, 179, 236);
+}
+
+
+.card{
+    margin: 10px;
+    border-left: #EDE66F;
+    border-left-style: solid;
+    background-color: aliceblue;
+    border-radius: 16px;
+    width: 300px;
+    height: 150px;
+    padding-left: 2%;
+    padding-top: 2%;
+    display: grid;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+.card>h3{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 4;
+}
+.card>div{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 4;
+}
+.card>button{
+    background-color: #EDE66F;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
